@@ -12,8 +12,8 @@ Pronto, todos os node_modules removidos
 
 # TODO List
 
-1. Adicionar Parâmetro. (só listar, remover direto);
+1. Adicionar Parâmetros. (só listar, remover direto);
 2. Adicionar no npm para instalação global;
-3. Adicionar besca de node_modules de subpastas das pastas;
+3. Adicionar busca de node_modules em subpastas;
 
 
