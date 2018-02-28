@@ -2,9 +2,12 @@
   "name": "modules-cleaner",
   "version": "1.0.0",
   "description": "Remove all node-modules from your directory",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "node-modules-cleaner": "./bin/index.js"
   },
   "keywords": [
     "nodejs",
@@ -12,7 +15,7 @@
     "clear",
     "remove"
   ],
-  "author": "mathias gheno azzolini",
+  "author": "mathias gheno azzolini <mathiasgheno@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^9.4.6"
