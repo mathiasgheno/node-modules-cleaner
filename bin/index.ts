@@ -9,6 +9,7 @@ if(parametros.includes('--help')){
     console.log('1. For now, nothing important');
 } else if (parametros.includes('--list')) {
     listar();
+    process.exit(-1);
 } else {
     remover();
 }

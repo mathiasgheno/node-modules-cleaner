@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Remove all node-modules from your directory",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --project . && npm link"
   },
   "preferGlobal": true,
   "bin": {
-    "node-modules-cleaner": "./bin/index.js"
+    "node-modules-cleaner": "./bin/index.js",
+    "nmc": "./bin/index.js"
   },
   "keywords": [
     "nodejs",
