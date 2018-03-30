@@ -19,6 +19,6 @@
   "author": "mathias gheno azzolini <mathiasgheno@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^9.4.6"
+    "@types/node": "^9.6.1"
   }
 }

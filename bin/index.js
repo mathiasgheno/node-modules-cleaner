@@ -6,18 +6,17 @@ const lib_1 = require("../lib");
 if (parametros.includes('--help')) {
     console.log('Everything that you can do with this project: ');
     console.log('1. For now, nothing important');
-    process.exit(-1);
 }
 else if (parametros.includes('--list')) {
-    lib_1.listFolders();
-    process.exit(-1);
+    console.log(lib_1.listAllNodeModules());
+}
+else if (parametros.includes('--deep')) {
+    lib_1.remover(true);
 }
 else if (parametros.includes('--listDeep')) {
-    console.log(lib_1.listFoldersDeep());
-    process.exit(-1);
+    console.log(lib_1.listAllNodeModulesDeep(process.cwd()));
 }
 else {
     lib_1.remover();
-    process.exit(-1);
 }
 //# sourceMappingURL=index.js.map

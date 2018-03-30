@@ -20,18 +20,30 @@ Para mais informações
 
 > node-modules-cleaner
 
+Pronto, todos os node_modules removidos
+
 Para remover as pastas
+
+# Com Sub-pastas
+
+> node-modules-cleaner --listDeep
+
+Para listar as subpastas que contêm node_modules
+
+> node-modules-cleaner --deep
+
+Para remover as sub-pastas com node-modules.
 
 Pronto, todos os node_modules removidos
 
 # TODO List
 
-1. Adicionar busca de node_modules em subpastas;
-2. Publicar no NPM;
-3. Adicionar mais conteúdo no help;
-4. Adicionar funcionalidades assync;
-5. Adicionar barra de progresso ao remover.
-6. Adicionar cores nos outputs.
+1. Publicar no NPM;
+2. Adicionar mais conteúdo no help;
+3. Adicionar funcionalidades assync;
+4. Adicionar barra de progresso ao remover.
+4. Adicionar cores nos outputs.
+5. Melhorar apresentação de output.
 
 
 

@@ -3,34 +3,32 @@
 const fs = require("fs");
 const readline = require('readline');
 
-export function listFolders() {
-    console.log('You have this: ');
-    console.log(listAllNodeModules());
-}
+export function remover(deep?: boolean) {
 
-export const listFoldersDeep = () : string [] => {
-    return listAllNodeModulesDeep(process.cwd());
-};
+    let folders : string[] = [];
 
-export function remover() {
+    if(deep) {
+        folders = listAllNodeModulesDeep(process.cwd())
+            .map( e => e.replace('node_modules', ''));
+    } else {
+        folders = listAllNodeModules();
+    }
 
     const rl = readline.createInterface({
         input: process.stdin,
         output: process.stdout
     });
 
-    listFolders();
+    console.log('You have this: ');
+    console.log(folders);
 
     rl.question('Do you want to remove this directory? (y/n) ', (answer) => {
         if (answer === 'yes' || answer == 'y') {
-            console.log('removendo');
-            listAllNodeModules().forEach((directory) => deleteFolder(`${directory}/node_modules`));
-            console.log('completo');
+            folders.forEach((directory) => deleteFolder(`${directory}/node_modules`));
+            console.log('\n success! :D ');
             rl.close();
-            process.exit(-1);
         } else {
             console.log('Have a nice day! :D');
-            process.exit(-1);
         }
     });
 }
@@ -38,7 +36,7 @@ export function remover() {
 /**
  * @description Listagem de todos os node_modules dos subdiretórios de um diretório.
  */
-const listAllNodeModules = () : string [] => {
+export const listAllNodeModules = () : string [] => {
     return fs.readdirSync(process.cwd())
         .map((element) => `${process.cwd()}/${element}`)
         .filter((element) => fs.statSync(element).isDirectory())
@@ -49,7 +47,7 @@ const listAllNodeModules = () : string [] => {
  * função recursiva. Se não existe nenhuma node_modules na pasta, entrar nas subpastas;
  * @description Retorna Array de node_modules de subpastas
  */
-const listAllNodeModulesDeep = (path) : string [] => {
+export const listAllNodeModulesDeep = (path: string) : string [] => {
 
     let all = [];
 
