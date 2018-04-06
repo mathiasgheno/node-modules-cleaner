@@ -19,4 +19,5 @@ else if (parametros.includes('--listDeep')) {
 else {
     lib_1.remover();
 }
+// TODO adicionar o switch. 
 //# sourceMappingURL=index.js.map

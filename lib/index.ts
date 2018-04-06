@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
-const fs = require("fs");
-const readline = require('readline');
+import * as fs from 'fs';
+import * as readline from 'readline';
 
 export function remover(deep?: boolean) {
 
