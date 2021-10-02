@@ -3,9 +3,7 @@
 
 name: Publish
 
-on:
-  release:
-    types: [published]
+on: [release, workflow_dispatch]
 
 jobs:
   publish:
