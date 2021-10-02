@@ -1,5 +1,5 @@
 {
-  "name": "modules-cleaner",
+  "name": "node-modules-cleaner",
   "version": "1.0.0",
   "description": "Remove all node-modules from your directory",
   "scripts": {
