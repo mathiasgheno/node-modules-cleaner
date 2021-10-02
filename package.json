@@ -1,6 +1,6 @@
 {
   "name": "@mga_/nmc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Remove all node-modules from your directory",
   "scripts": {
     "build": "tsc --project ."
