@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Remove all node-modules from your directory",
   "scripts": {
-    "build": "tsc --project . && npm link"
+    "build": "tsc --project ."
   },
   "preferGlobal": true,
   "bin": {
