@@ -1,5 +1,5 @@
 {
-  "name": "node-modules-cleaner",
+  "name": "@mga_/nmc",
   "version": "1.0.0",
   "description": "Remove all node-modules from your directory",
   "scripts": {
