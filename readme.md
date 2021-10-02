@@ -1,49 +1,52 @@
-# Sobre
+# Node Modules Cleaner
 
-Código básico para remover todos os node_modules de uma pasta;
+Remova recursivamente o `node_modules` de uma pasta. Ideal para manter apenas o codigo base de uma pasta de projetos.
 
-# Como Usar
+## Instalação
 
+```bash
+npm install @mga_/nmc
+```
 
-> sudo npm install
-> sudo npm link
-
-Dentro da sua pasta de projetos, por exemplo WebstormProjects, rode
-
-> node-modules-cleaner --list
+## Como Usar
 
 Para listar as pastas que possuem o node-modules
 
-> node-modules-cleaner --help
+```bash
+node-modules-cleaner --list
+```
 
 Para mais informações
 
-> node-modules-cleaner
+```bash
+node-modules-cleaner --help
+```
 
-Pronto, todos os node_modules removidos
+Para limpar
 
-Para remover as pastas
-
-# Com Sub-pastas
-
-> node-modules-cleaner --listDeep
+```bash
+node-modules-cleaner
+```
 
 Para listar as subpastas que contêm node_modules
 
-> node-modules-cleaner --deep
+```bash
+node-modules-cleaner --listDeep
+```
 
 Para remover as sub-pastas com node-modules.
 
-Pronto, todos os node_modules removidos
+```bash
+node-modules-cleaner --deep
+```
 
 # TODO List
 
-1. Publicar no NPM;
-2. Adicionar mais conteúdo no help;
-3. Adicionar funcionalidades assync;
-4. Adicionar barra de progresso ao remover.
-4. Adicionar cores nos outputs.
-5. Melhorar apresentação de output.
+1. Adicionar funcionalidades assync.
+2. Adicionar barra de progresso ao remover.
+3. Adicionar cores nos outputs.
+4. Melhorar apresentação de output.
+5. Suporte a monorepos
 
 
 
