@@ -1,7 +1,5 @@
 # Node Modules Cleaner
 
-Remova recursivamente o `node_modules` de uma pasta. Ideal para manter apenas o codigo base de uma pasta de projetos.
-
 Recursively remove all `node_module` inside a folder. Ideal for keeping just the source code of a folder of project, like `WebstormProjects` folder.
 
 ## Installing
