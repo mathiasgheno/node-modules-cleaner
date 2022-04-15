@@ -3,8 +3,10 @@ let parametros : any = process.argv;
 import { listAllNodeModules, remover, listAllNodeModulesDeep } from '../lib'
 
 if(parametros.includes('--help')){
-    console.log('Everything that you can do with this project: ');
-    console.log('1. For now, nothing important');
+    console.log('Options of this project: ');
+    console.log('1. --list');
+    console.log('2. --deep');
+    console.log('2. --listDeep');
 } else if (parametros.includes('--list')) {
     console.log(listAllNodeModules());
 } else if (parametros.includes('--deep')){
@@ -14,5 +16,3 @@ if(parametros.includes('--help')){
 } else {
     remover();
 }
-
-// TODO adicionar o switch.
